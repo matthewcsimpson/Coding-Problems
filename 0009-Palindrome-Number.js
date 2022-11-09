@@ -27,6 +27,9 @@
  * @return {boolean}
  */
 var isPalindrome = function (x) {
+  // if the number is less than zero, OR
+  // divides by 10 with no remainder AND isn't exactly zero
+  // return false because it cant be a palindrome.
   if (x < 0 || (x % 10 === 0 && x !== 0)) {
     return false;
   }
@@ -34,7 +37,9 @@ var isPalindrome = function (x) {
   let y = 0;
   while (x > y) {
     y = y * 10 + (x % 10);
+    console.log(y);
     x = Math.floor(x / 10);
+    console.log(x);
   }
 
   return x === y || x === Math.floor(y / 10);

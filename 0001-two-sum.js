@@ -27,8 +27,11 @@
  * @return {number[]}
  */
 var twoSum = function (nums, target) {
+  // loop through the array
   for (let i = 0; i < nums.length; i++) {
+    // loop through it again to check cominations of nums[k] with nums[i]
     for (let k = i + 1; k < nums.length; k++) {
+      // if nums[k] & nums[i] eequal the target sum, return them as an array.
       if (nums[i] + nums[k] === target) {
         return [i, k];
       }
