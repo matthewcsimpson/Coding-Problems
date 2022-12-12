@@ -10,20 +10,18 @@
 // the same character, but a character may map to itself.
 
 // Example 1:
-
 // Input: s = "egg", t = "add"
 // Output: true
-// Example 2:
 
+// Example 2:
 // Input: s = "foo", t = "bar"
 // Output: false
-// Example 3:
 
+// Example 3:
 // Input: s = "paper", t = "title"
 // Output: true
 
 // Constraints:
-
 // 1 <= s.length <= 5 * 104
 // t.length == s.length
 // s and t consist of any valid ascii character.
@@ -34,25 +32,35 @@
  * @return {boolean}
  */
 const isIsomorphic = (s, t) => {
+  // split the incoming strings into arrays,
+  // and create a boolean to track whether we've achieved the goal.
   let ss = s.split("");
   let tt = t.split("");
   let bool = true;
 
+  // if the arrays are the same length  largely unnecessary as the strings are
+  // guaranteed to be the same length
   if (ss.length !== tt.length) {
-    return bool;
+    return false;
   }
 
+  // loop one of the strings.  since they are the same length, we only need to loop one.
   for (let i = 0; i < ss.length; i++) {
+    // create variables for the indexes of the curent characters in each string.
     const a = ss.indexOf(ss[i]);
     const b = tt.indexOf(tt[i]);
-    if (tt[a] !== tt[i] || ss[b] !== ss[i]) {
+    // if the character at the stored index in either array doesn't equal the
+    // character at the current index, then the boolean becomess false.
+    if (ss[a] !== ss[i] || tt[b] !== tt[i]) {
       bool = false;
     }
   }
+
+  // return the boolean
   return bool;
 };
 
-let s = "paper";
-let t = "title";
-
-console.log(isIsomorphic(s, t));
+// console.log(isIsomorphic("paper", "title"));
+// console.log(isIsomorphic("boop", "school"));
+// console.log(isIsomorphic("one", "two"));
+console.log(isIsomorphic("thrae", "spree"));
