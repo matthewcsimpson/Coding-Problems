@@ -101,17 +101,20 @@ function rgb2(r, g, b) {
 /**
  *  Function returns the same as in solution one, but using toString(radix) to calculate the hex number
  * which I previously didn't know what as thing.
- * @param {Number} d
+ * @param {Number} num
  * @returns String
  */
-function toHex(d) {
-  if (d < 0) {
+function toHex(num) {
+  if (num < 0) {
     return "00";
   }
-  if (d > 255) {
+  if (num > 255) {
     return "FF";
   }
-  return ("0" + Number(d).toString(16)).slice(-2).toUpperCase();
+  // Number(num) makes the number a number
+  // toString(16) outputs a string of that number in base 16.
+  // slice(-2) slices out just the last two characters of the resulting string (eg 0FF becomes FF)
+  return ("0" + Number(num).toString(16)).slice(-2).toUpperCase();
 }
 
 console.log(rgb2(255, 255, 255)); // returns FFFFFF
