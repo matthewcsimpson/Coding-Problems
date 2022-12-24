@@ -33,14 +33,14 @@ var findMedianSortedArrays = function (nums1, nums2) {
     return a - b;
   });
 
+  console.log(allnums);
   // if the array has an even length, we must average the middle two numbers and return that average.
   if (allnums.length % 2 === 0) {
     let index = Math.ceil(allnums.length / 2) - 1;
     return (allnums[index] + allnums[index + 1]) / 2;
     // if the array has an odd length, simply look for the middle number & return it.
   } else {
-    let index = Math.ceil(allnums.length / 2) - 1;
-    return allnums[index];
+    return allnums[Math.ceil(allnums.length / 2) - 1];
   }
 };
 
@@ -48,4 +48,9 @@ var findMedianSortedArrays = function (nums1, nums2) {
 let nums1 = [3];
 let nums2 = [-1, -2];
 
+let nums3 = [2, 3, 4];
+let nums4 = [7, 8, 9];
+
 console.log(findMedianSortedArrays(nums1, nums2));
+console.log(findMedianSortedArrays(nums2, nums3));
+console.log(findMedianSortedArrays(nums3, nums4));
