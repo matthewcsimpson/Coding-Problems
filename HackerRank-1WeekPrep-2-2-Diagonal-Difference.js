@@ -47,17 +47,22 @@
  * @param {array} arr
  */
 const diagonalDifference = (arr) => {
-  let sumFore = 0;
-  let sumBack = 0;
-  let checkLength = arr.length - 1;
+  // create starting points for the summing.
+  let sumBackSlash = 0;
+  let sumForwardSlash = 0;
 
+  // loop through the input array[][].
   for (let i = 0; i < arr.length; i++) {
-    sumFore += arr[i][i];
-    sumBack += arr[i][checkLength];
-    checkLength--;
+    // in the loop, take the firrst element of the first array,
+    // second of the second, etc.
+    sumBackSlash += arr[i][i];
+    // in the loop take the last elemtn of the first array,
+    // second to last of the second, etc.
+    sumForwardSlash += arr[i][arr.length - 1 - i];
   }
 
-  return Math.abs(sumFore - sumBack);
+  // return the absolute value of the difference between the two diagonals.
+  return Math.abs(sumBackSlash - sumForwardSlash);
 };
 
 let array1 = [
