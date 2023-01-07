@@ -33,9 +33,9 @@
 // 1 <= coins <= 108
 
 /**
- * @param costs
- * @param  coins
- * @returns
+ * @param costs - array of ice cream bar costs
+ * @param  coins - how many coins we have
+ * @returns - number of ice cream bars we can buy
  */
 const maxIceCream = (costs: number[], coins: number): number => {
   // we need to count how many bars we've bought.
