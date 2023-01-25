@@ -19,24 +19,17 @@
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
 
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
-var twoSum = function (nums, target) {
-  // loop through the array
+const twoSumTS = (nums: number[], target: number): number[] => {
+  let rnums: number[] = [];
   for (let i = 0; i < nums.length; i++) {
-    // loop through it again to check cominations of nums[k] with nums[i]
-    // starting from the same index as the first loop because we don't need to check any
-    // combinations more than once.
-    for (let k = i + 1; k < nums.length; k++) {
-      // if nums[k] & nums[i] equal the target sum, return them as an array.
-      if (nums[i] + nums[k] === target) {
-        return [i, k];
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        rnums.push(i);
+        rnums.push(j);
       }
     }
   }
+  return rnums;
 };
 
-console.log(twoSum([2, 7, 11, 15], 9));
+console.log(twoSumTS([2, 7, 11, 15], 9));
