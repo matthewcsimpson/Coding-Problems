@@ -60,7 +60,7 @@ const isIsomorphic = (s, t) => {
   return bool;
 };
 
-// console.log(isIsomorphic("paper", "title"));
-// console.log(isIsomorphic("boop", "school"));
-// console.log(isIsomorphic("one", "two"));
+console.log(isIsomorphic("paper", "title"));
+console.log(isIsomorphic("boop", "school"));
+console.log(isIsomorphic("one", "two"));
 console.log(isIsomorphic("thrae", "spree"));
