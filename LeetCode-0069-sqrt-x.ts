@@ -51,6 +51,8 @@ console.log(mySqrt(8)); // 2
 console.log(mySqrt(10)); // 3
 console.log(mySqrt(365)); // 19
 
+// ------------------------------------------------------------------------
+
 /**
  * Binary Search Method
  * @param x - number
