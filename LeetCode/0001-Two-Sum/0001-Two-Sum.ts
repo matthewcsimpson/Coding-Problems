@@ -32,4 +32,5 @@ const twoSumTS = (nums: number[], target: number): number[] => {
   return rnums;
 };
 
+// Tests
 console.log(twoSumTS([2, 7, 11, 15], 9));
