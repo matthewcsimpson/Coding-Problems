@@ -1,9 +1,9 @@
-// Implement a function that accepts 3 integer values a, b, c.
-// The function should return true if a triangle can be built with
-// the sides of given length and false in any other case.
-
-// (In this case, all triangles must have surface greater than 0 to be accepted).
-
+/**
+ * @param {number} a 
+ * @param {number} b 
+ * @param {number} c 
+ * @returns boolean
+ */
 function isTriangle(a, b, c) {
   // the three sides of a triangle rule states that a given side
   // must be smaller than the sum of the other two sides
