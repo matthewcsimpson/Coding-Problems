@@ -11,6 +11,7 @@ function isTriangle(a, b, c) {
   return a + b > c && b + c > a && c + a > b;
 }
 
+// Tests
 console.log(isTriangle(1, 2, 2)); // expect true
 console.log(isTriangle(7, 2, 2)); // expect false
 console.log(isTriangle(5, 1, 2)); // expect false

@@ -1,6 +1,4 @@
-
 /**
- * 
  * @param {number} num 
  * @returns boolean
  */
@@ -27,6 +25,7 @@ function isPrime(num) {
   return true;
 }
 
+// Tests
 console.log(isPrime(0)); // expect false
 console.log(isPrime(1)); // expect false
 console.log(isPrime(2)); // expect true

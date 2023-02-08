@@ -1,4 +1,3 @@
-
 /**
  * @param {number} sq
  * @returns number
@@ -15,6 +14,7 @@ function findNextSquare(sq) {
   }
 }
 
+// Tests
 console.log(findNextSquare(15241383936));
 console.log(findNextSquare(155)); // not a perfect square
 console.log(findNextSquare(319225));
