@@ -25,17 +25,17 @@
  * @param {string} t
  * @return {boolean}
  */
-const isSubsequence = (s, t) => {
+const  isSubsequence = (s: string, t: string): boolean =>{
   // if the shorter string is longer, it can't be a substring can it?
   if (s.length > t.length) {
     return false;
   }
 
   // split strings into arrays, add an empty array, and a counter for it.
-  let ss = s.split("");
-  let tt = t.split("");
-  let check = [];
-  let subIndex = 0;
+  let ss: string[] = s.split("");
+  let tt: string[] = t.split("");
+  let check: string[] = [];
+  let subIndex: number = 0;
 
   // loop the longer string/array.
   // If the character inthe longer array is the same as the specified
@@ -55,5 +55,6 @@ let one = "abc";
 let two = "ahbkcd";
 let three = "ghi";
 let four = "abcdefghijklmnopqrstuvwxyz";
+
 console.log(isSubsequence(one, two));
 console.log(isSubsequence(three, four));

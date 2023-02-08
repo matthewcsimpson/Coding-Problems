@@ -26,36 +26,31 @@
 // t.length == s.length
 // s and t consist of any valid ascii character.
 
-/**
- * @param {string} s
- * @param {string} t
- * @return {boolean}
- */
-/**
- * @param {string} s
- * @param {string} t
- * @return {boolean}
- */
-const isIsomorphic = (s, t) => {
+const isIsomorphic = (s: string, t: string): boolean => {
+  // Split the strings into arrays of characters
   let ss = s.split("");
   let tt = t.split("");
-  let bool = true;
+  // Create a boolean, and start out true.
+  let bool: boolean = true;
 
+  // If the arrays are different lenghts, return false because
+  // they cannot be isomorphic, so the function can be exited.
   if (ss.length !== tt.length) {
-    return bool;
+    return false;
   }
 
+  // Loop the arrays
   for (let i = 0; i < ss.length; i++) {
-    const a = ss.indexOf(ss[i]);
-    const b = tt.indexOf(tt[i]);
-    if (tt[a] !== tt[i] || ss[b] !== ss[i]) {
+    // check the current letters to the letters at the current index in the other string
+    if (tt[ss.indexOf(ss[i])] !== tt[i] || ss[tt.indexOf(tt[i])] !== ss[i]) {
       bool = false;
     }
   }
   return bool;
 };
 
-console.log(isIsomorphic("paper", "title"));
-console.log(isIsomorphic("boop", "school"));
-console.log(isIsomorphic("one", "two"));
-console.log(isIsomorphic("thrae", "spree"));
+console.log(isIsomorphic("paper", "title")); // true
+console.log(isIsomorphic("boop", "school")); // false
+console.log(isIsomorphic("one", "two")); // true
+console.log(isIsomorphic("thrae", "spree")); // false
+console.log(isIsomorphic("foo", "bar")); // false
