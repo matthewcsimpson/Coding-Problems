@@ -11,3 +11,6 @@ If the parameter is itself not a perfect square then -1 should be returned. You 
 * 121 --> 144
 * 625 --> 676
 * 114 --> -1 (since 114 is not a perfect square)
+
+## My Solutions
+- [JavaScript](Find-Next-Perfect-Square.js)

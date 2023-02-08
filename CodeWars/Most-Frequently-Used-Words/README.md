@@ -17,23 +17,17 @@ Assumptions:
   or top-1 words should be returned, or an empty array if a text contains
   no words.
 
-### Examples:
-#### Input:
-`text = "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing. An olla of rather more beef than mutton, a salad on most nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra on Sundays, made away with three-quarters of his income."`
+### Example 1:
+-   Input: `text = "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing. An olla of rather more beef than mutton, a salad on most nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra on Sundays, made away with three-quarters of his income."`
+-   Output: `["a", "of", "on"]`
 
-`top_3_words(text)`
+### Example 2:
+-   Input: `top_3_words("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e")`
+-   Output: `["e", "ddd", "aa"]`
 
-#### Output: 
-`["a", "of", "on"]`
+### Example 3:
+-   Input:  `top_3_words(" //wont won't won't")`
+-   Output: `["won't", "wont"]`
 
-#### Input
-`top_3_words("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e")`
-
-#### Output:
-`["e", "ddd", "aa"]`
-
-#### Input:
-`top_3_words(" //wont won't won't")`
-
-#### Output: 
-`["won't", "wont"]`
+## My Solutions
+- [JavaScript](Most-Frequently-Used-Words.js)

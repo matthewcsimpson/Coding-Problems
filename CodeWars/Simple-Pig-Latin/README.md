@@ -7,3 +7,6 @@ Leave punctuation marks untouched.
 ### Examples
 -   pigIt('Pig latin is cool'); => igPay atinlay siay oolcay
 -   pigIt('Hello world !'); => elloHay orldway !
+
+## My Solutions
+-   [JavaScript](Simple-Pig-Latin.js)

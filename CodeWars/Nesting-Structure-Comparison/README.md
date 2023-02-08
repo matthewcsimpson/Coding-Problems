@@ -19,3 +19,7 @@ Should return false
 -   [ [ [ ], [ ] ] ].sameStructureAs( [ [ 1, 1 ] ] );
 
 _For your convenience, there is already a function 'isArray(o)' declared and defined that returns true if its argument is an array, false otherwise._
+
+
+## My Solutions
+- [JavaScript](Nesting-Structure-Comparison.js)

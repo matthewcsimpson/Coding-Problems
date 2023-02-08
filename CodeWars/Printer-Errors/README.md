@@ -14,3 +14,6 @@ The string has a length greater or equal to one and contains only letters from `
 ### Examples:
 -   printer_error("aaabbbbhaijjjm") => "0/14"
 -   printer_error("aaaxbbbbyyhwawiwjjjwwm) => "8/22"
+
+## My Solutions
+- [JavaScript](Printer-Errors.js)

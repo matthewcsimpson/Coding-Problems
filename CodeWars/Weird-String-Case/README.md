@@ -8,3 +8,7 @@ The passed in string will only consist of alphabetical characters and spaces(`' 
 ### Examples:
 -   toWeirdCase( "String" ); => returns "StRiNg"
 -   toWeirdCase( "Weird string case" ); => returns "WeIrD StRiNg CaSe"
+
+## My Solutions
+- [JavaScript 1](Weird-String-Case-1.js)
+- [JavaScript 2](Weird-String-Case-2.js)

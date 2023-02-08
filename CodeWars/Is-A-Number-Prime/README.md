@@ -23,3 +23,6 @@ n/2, will be too slow.
 *   is_prime(1)  /* false */
 *   is_prime(2)  /* true  */
 *   is_prime(-1) /* false */
+
+## My Solutions
+- [JavaScript](Is-A-Number-Prime.js)
