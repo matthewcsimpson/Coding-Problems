@@ -27,5 +27,5 @@ _Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]._
 -   Only one valid answer exists.
 
 ## Solutions:
-- [JavaScript](https://github.com/matthewcsimpson/coding-problems/blob/main/LeetCode/0001-Two-Sum/0001-Two-Sum.js)
-- [TypeScript](https://github.com/matthewcsimpson/coding-problems/blob/main/LeetCode/0001-Two-Sum/0001-Two-Sum.ts)
+- [JavaScript](0001-Two-Sum.js)
+- [TypeScript](0001-Two-Sum.ts)
