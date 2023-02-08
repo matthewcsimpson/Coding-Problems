@@ -17,7 +17,6 @@
 // Input: list1 = [], list2 = [0]
 // Output: [0]
 
-// Definition for singly-linked list.
 class ListNode {
   val: number;
   next: ListNode | null;
@@ -32,7 +31,7 @@ const mergeTwoLists = (
   list2: ListNode | null
 ): ListNode | null => {
   // new ListNode
-  let result = new ListNode(null, null);
+  let result = new ListNode(undefined);
 
   // reference to the current node of the list
   let current = result;
