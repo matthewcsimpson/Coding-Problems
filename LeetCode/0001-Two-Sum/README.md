@@ -1,4 +1,5 @@
 ## 1. Two Sum
+[LeetCode Link](https://leetcode.com/problems/two-sum/)
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -24,3 +25,7 @@ _Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]._
 -   `-109 <= nums[i] <= 109`
 -   `-109 <= target <= 109`
 -   Only one valid answer exists.
+
+## Solutions:
+- [JavaScript](https://github.com/matthewcsimpson/coding-problems/blob/main/LeetCode/0001-Two-Sum/0001-Two-Sum.js)
+- [TypeScript](https://github.com/matthewcsimpson/coding-problems/blob/main/LeetCode/0001-Two-Sum/0001-Two-Sum.ts)
