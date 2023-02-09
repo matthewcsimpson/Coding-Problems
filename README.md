@@ -4,8 +4,7 @@ This is a repository where I'll be storing my solutions to various coding and wh
 
 Most of these will come from LeetCode, but if I complete any from other sources I will add them as well!
 
-## Links:
-
+## Profile Links:
 - LeetCode: <https://leetcode.com/matthewcsimpson/>
 - CodeWars: <https://www.codewars.com/users/matthewcsimpson>
 - HackerRank: <https://www.hackerrank.com/matthewcsimpson>
