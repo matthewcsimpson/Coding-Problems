@@ -18,5 +18,6 @@ var twoSum = function (nums, target) {
   }
 };
 
-// Tests
-console.log(twoSum([2, 7, 11, 15], 9));
+module.exports = twoSum;
+
+
