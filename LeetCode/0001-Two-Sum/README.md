@@ -25,7 +25,3 @@ _Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]._
 -   `-109 <= nums[i] <= 109`
 -   `-109 <= target <= 109`
 -   Only one valid answer exists.
-
-## My Solutions:
-- [JavaScript](0001-Two-Sum.js)
-- [TypeScript](0001-Two-Sum.ts)

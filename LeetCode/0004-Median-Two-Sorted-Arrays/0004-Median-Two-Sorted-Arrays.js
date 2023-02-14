@@ -26,6 +26,6 @@ let nums3 = [2, 3, 4];
 let nums4 = [7, 8, 9];
 
 // Tests
-console.log(findMedianSortedArrays(nums1, nums2));
-console.log(findMedianSortedArrays(nums2, nums3));
-console.log(findMedianSortedArrays(nums3, nums4));
+console.log(findMedianSortedArrays(nums1, nums2)); // -1
+console.log(findMedianSortedArrays(nums2, nums3)); // 2
+console.log(findMedianSortedArrays(nums3, nums4)); // 5.5

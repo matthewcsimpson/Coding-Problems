@@ -25,5 +25,3 @@ Output: `1`
 -   `2 <= n <= 105`
 -   `0 <= height[i] <= 104`
 
-## My Solutions
-- [JavaScript](0011-Container-With-Most-Water.js)

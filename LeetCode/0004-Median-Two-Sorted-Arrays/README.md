@@ -21,6 +21,3 @@ _The overall run time complexity should be O(log (m+n))._
 - `0 <= n <= 1000`
 - `1 <= m + n <= 2000`
 - `-106 <= nums1[i], nums2[i] <= 106`
-
-## My Solutions
-- [JavaScript](0004-Median-Two-Sorted-Arrays.js)

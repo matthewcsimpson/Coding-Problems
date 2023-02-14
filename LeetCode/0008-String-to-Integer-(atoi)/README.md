@@ -60,6 +60,3 @@ _Since 4193 is in the range [-231, 231 - 1], the final result is 4193._
 -   `0 <= s.length <= 200`
 -   `s` consists of English letters (lower-case and upper-case), digits (`0-9`), `' '`, `'+'`, `'-'`, and `'.'`.
 
-## My Solutions
-- [JavaScript 1](0008-String-to-Integer-(atoi)-1.js)
-- [JavaScript 2](0008-String-to-Integer-(atoi)-2.js)

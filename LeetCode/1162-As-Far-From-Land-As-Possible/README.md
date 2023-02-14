@@ -23,5 +23,3 @@ The distance used in this problem is the Manhattan distance: the distance betwee
 -   `1 <= n <= 100`
 -   `grid[i][j] is 0 or 1`
 
-## My Solutions
-- [TypeScript](1162-As-Fat-From-Land-As-Possible)

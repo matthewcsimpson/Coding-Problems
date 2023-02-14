@@ -1,4 +1,4 @@
-
+const longestCommonPrefix = require("../0014-Longest-Prefix/0014-Longest-Prefix");
 
 /**
  * @param {string} s
@@ -32,9 +32,4 @@ const lengthOfLongestSubstring = (s) => {
   return max;
 };
 
-// Tests
-console.log(lengthOfLongestSubstring("pwwkew")); //3
-console.log(lengthOfLongestSubstring("bbbbb")); //1
-console.log(lengthOfLongestSubstring("abcabcbb")); //3
-console.log(lengthOfLongestSubstring("dvdf")); //3
-console.log(lengthOfLongestSubstring(" ")); //1
+module.exports = lengthOfLongestSubstring
