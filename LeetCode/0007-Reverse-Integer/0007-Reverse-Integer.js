@@ -12,7 +12,5 @@ const reverse = (x) => {
   return x < 0 ? answer * -1 : answer;
 };
 
-// Tests
-console.log(reverse(123));
-console.log(reverse(-123));
-console.log(reverse(Math.pow(2, 29)));
+module.exports = reverse;
+

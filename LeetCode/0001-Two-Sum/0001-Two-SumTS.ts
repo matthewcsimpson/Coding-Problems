@@ -11,7 +11,5 @@ const twoSumTS = (nums: number[], target: number): number[] => {
   return rnums;
 };
 
-module.exports = twoSumTS;
+export default twoSumTS;
 
-// Tests
-console.log(twoSumTS([2, 7, 11, 15], 9));

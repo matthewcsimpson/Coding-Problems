@@ -19,13 +19,5 @@ var findMedianSortedArrays = function (nums1, nums2) {
   }
 };
 
-// Test Data
-let nums1 = [3];
-let nums2 = [-1, -2];
-let nums3 = [2, 3, 4];
-let nums4 = [7, 8, 9];
+module.exports = findMedianSortedArrays;
 
-// Tests
-console.log(findMedianSortedArrays(nums1, nums2)); // -1
-console.log(findMedianSortedArrays(nums2, nums3)); // 2
-console.log(findMedianSortedArrays(nums3, nums4)); // 5.5

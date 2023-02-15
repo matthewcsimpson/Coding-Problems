@@ -27,8 +27,10 @@ var isPalindrome = function (x) {
   return x === y || x === Math.floor(y / 10);
 };
 
+module.exports = isPalindrome;
+
 // Tests
-console.log(isPalindrome(121));
-console.log(isPalindrome(1221));
-console.log(isPalindrome(12321));
-console.log(isPalindrome(-1221));
+console.log(isPalindrome(121)); // true
+console.log(isPalindrome(1221)); //true
+console.log(isPalindrome(12321)); // true
+console.log(isPalindrome(-1221)); //false

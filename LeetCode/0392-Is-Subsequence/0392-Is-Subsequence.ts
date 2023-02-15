@@ -25,7 +25,7 @@
  * @param {string} t
  * @return {boolean}
  */
-const  isSubsequence = (s: string, t: string): boolean =>{
+const isSubsequenceTS = (s: string, t: string): boolean => {
   // if the shorter string is longer, it can't be a substring can it?
   if (s.length > t.length) {
     return false;
@@ -46,15 +46,14 @@ const  isSubsequence = (s: string, t: string): boolean =>{
       subIndex++;
     }
   }
-
   // Now if the empty/check array is the same length as the shorter string, the answer should work.
   return ss.length === check.length;
 };
 
-let one = "abc";
-let two = "ahbkcd";
-let three = "ghi";
-let four = "abcdefghijklmnopqrstuvwxyz";
+let five = "abc";
+let six = "ahbkcd";
+let seven = "ghi";
+let eight = "abcdefghijklmnopqrstuvwxyz";
 
-console.log(isSubsequence(one, two));
-console.log(isSubsequence(three, four));
+console.log(isSubsequenceTS(five, six));
+console.log(isSubsequenceTS(seven, eight));

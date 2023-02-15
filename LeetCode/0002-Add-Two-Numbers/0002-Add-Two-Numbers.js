@@ -1,9 +1,8 @@
-
 //   Definition for singly-linked list.
 function ListNode(val, next) {
-  // val is a value, or it's 0. 
+  // val is a value, or it's 0.
   this.val = val === undefined ? 0 : val;
-  // next is either nothing, or another ListNode(). 
+  // next is either nothing, or another ListNode().
   this.next = next === undefined ? null : next;
 }
 
@@ -49,6 +48,8 @@ var addTwoNumbers = function (l1, l2) {
 
   return result.next;
 };
+
+module.exports = addTwoNumbers;
 
 // Test Data
 let list1 = new ListNode(1, new ListNode(2, new ListNode(3)));

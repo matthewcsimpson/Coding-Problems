@@ -43,12 +43,4 @@ const myAtoi2 = (s) => {
   return result;
 };
 
-// Tests
-console.log(myAtoi2("   -42")); // -42
-console.log(myAtoi2("42")); // 42
-console.log(myAtoi2("4193 with words")); // 4193
-console.log(myAtoi2("words and 987")); // 0
-console.log(myAtoi2("-91283472332")); // -2147483648
-console.log(myAtoi2("3.14159")); // -3
-console.log(myAtoi2(".1")); // -0
-console.log(myAtoi2("21474836460")); // 2147483647
+module.exports = myAtoi2

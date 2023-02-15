@@ -1,4 +1,4 @@
-import {describe, expect, test} from '@jest/globals';
+import {expect, test} from '@jest/globals';
 import twoSum from './0001-Two-SumJS';
 
 test("0001-Two-SumTS", ()=>{
