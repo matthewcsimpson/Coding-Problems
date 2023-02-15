@@ -25,5 +25,6 @@ Array.prototype.sameStructureAs = (other) => {
   return true;
 };
 
+
 // Tests
 console.log([1, 1, 1].sameStructureAs([2, 2, 2])); // true

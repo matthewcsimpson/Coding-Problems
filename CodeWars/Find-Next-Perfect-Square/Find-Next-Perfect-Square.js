@@ -2,7 +2,7 @@
  * @param {number} sq
  * @returns number
  */
-function findNextSquare(sq) {
+const findNextSquare = (sq) => {
   // if the input number is not a perfect square, return -1
   if (Math.sqrt(sq) % 1 !== 0) {
     return -1;
@@ -14,9 +14,6 @@ function findNextSquare(sq) {
   }
 }
 
-// Tests
-console.log(findNextSquare(15241383936));
-console.log(findNextSquare(155)); // not a perfect square
-console.log(findNextSquare(319225));
-console.log(findNextSquare(625));
-console.log(findNextSquare(121));
+module.exports = findNextSquare;
+
+

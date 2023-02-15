@@ -3,7 +3,7 @@
  * @param {string} s
  * @returns string
  */
-function printerError(s) {
+const printerError = (s) =>{
   // check the string for characters between n and z, case insensitive.
   let matches = s.match(/[N-Z]/gi);
 
@@ -16,21 +16,6 @@ function printerError(s) {
   return `${matches.length}/${s.length}`;
 }
 
-// Tests 
-console.log(
-  printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
-);
-console.log(
-  printerError("kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
-);
-console.log(
-  printerError(
-    "kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyzuuuuu"
-  )
-);
-console.log(
-  printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmm")
-);
-console.log(
-  printerError("lkjsdlkhaaaaaaajkjzzzzzzzsssssjhdfcccccclkasdfjdbbbbbbb")
-);
+module.exports= printerError
+
+

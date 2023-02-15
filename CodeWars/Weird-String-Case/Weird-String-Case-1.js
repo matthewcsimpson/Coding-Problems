@@ -26,6 +26,4 @@ const toWeirdCase = (string) => {
   return letters.join("");
 };
 
-// Tests
-console.log(toWeirdCase("Weird string case"));
-console.log(toWeirdCase("String"));
+module.exports = toWeirdCase;

@@ -5,9 +5,9 @@
  */
 function rgb(r, g, b) {
   // round the numbers
-  rr = rounder(r);
-  gg = rounder(g);
-  bb = rounder(b);
+  let rr = rounder(r);
+  let gg = rounder(g);
+  let bb = rounder(b);
 
   // return the string
   return `${convertToHex(Math.floor(rr / 16))}${convertToHex(
@@ -64,8 +64,4 @@ function convertToHex(num) {
   }
 }
 
-// Tests
-console.log(rgb(255, 255, 255)); // returns FFFFFF
-console.log(rgb(255, 255, 300)); // returns FFFFFF
-console.log(rgb(0, 0, 0)); // returns 000000
-console.log(rgb(148, 0, 211)); // returns 9400D3
+module.exports = rgb;
