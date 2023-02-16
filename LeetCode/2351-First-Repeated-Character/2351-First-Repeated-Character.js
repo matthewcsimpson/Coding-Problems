@@ -1,6 +1,6 @@
 /**
  * @param {string} s
- * @return {character}
+ * @return {character} 
  */
 const repeatedCharacter = (s) => {
   // split the string into an array

@@ -1,6 +1,6 @@
 /**
  * @param {number[]} tasks
- * @return {number}
+ * @return {number} 
  */
 const minimumRounds = (tasks) => {
   // we need an objec tot count the occurences of each Number.

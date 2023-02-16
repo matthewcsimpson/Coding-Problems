@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param nums - an array of numbers
+ * @returns number
+ */
 const findTheArrayConcVal = (nums: number[]): number => {
   // Variable to track the concatenated value
   let cv = 0;
