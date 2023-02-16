@@ -28,9 +28,3 @@ var isPalindrome = function (x) {
 };
 
 module.exports = isPalindrome;
-
-// Tests
-console.log(isPalindrome(121)); // true
-console.log(isPalindrome(1221)); //true
-console.log(isPalindrome(12321)); // true
-console.log(isPalindrome(-1221)); //false
