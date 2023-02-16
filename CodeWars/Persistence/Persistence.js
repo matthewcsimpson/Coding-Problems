@@ -1,14 +1,12 @@
-
 /**
  * Recursive
- * @param {number} num 
+ * @param {number} num
  * @returns number
  */
 function persistence(num) {
   // if the number is only one digit, return zero because we can't proceed.
   // This will also be our exit condition from the recursive function.
   if (num.toString().length === 1) {
-    console.log(num);
     return 0;
   }
 
@@ -31,6 +29,4 @@ function persistence(num) {
   return persistence(multiplier) + 1;
 }
 
-module.exports = persistence
-
-
+module.exports = persistence;
