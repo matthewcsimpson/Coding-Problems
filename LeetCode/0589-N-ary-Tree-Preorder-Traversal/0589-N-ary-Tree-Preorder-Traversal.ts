@@ -28,3 +28,4 @@ const preorder = (root: TreeNode | null): number[] => {
   // return the r array 
   return r;
 };
+
