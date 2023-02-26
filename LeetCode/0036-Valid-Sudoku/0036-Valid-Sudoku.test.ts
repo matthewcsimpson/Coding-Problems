@@ -1,10 +1,16 @@
 import { expect, test } from "@jest/globals";
-import isValidSudoku from "./0036-Valid-Sudoku";
+import isValidSudoku from "./0036-Valid-Sudoku-1";
+import isValidSudokuTwo from "./0036-Valid-Sudoku-2";
 
-test("0036-Valid-Sudoku", () => {
+test("0036-Valid-Sudoku-1", () => {
   expect(isValidSudoku(board1)).toBe(true);
   expect(isValidSudoku(board2)).toBe(false);
 });
+
+test("0036-Valid-Sudoku-2", () => {
+    expect(isValidSudokuTwo(board1)).toBe(true);
+    expect(isValidSudokuTwo(board2)).toBe(false);
+  });
 
 // Test Data
 const board1 = [
