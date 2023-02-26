@@ -1,6 +1,5 @@
 const twoSumTSTwo = (nums: number[], target: number): number[] => {
   let map = new Map();
-  let map2 = {}
 
   for (let i = 0; i < nums.length; i++) {
     let diff = target - nums[i];

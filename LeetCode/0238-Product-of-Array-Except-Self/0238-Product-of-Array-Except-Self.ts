@@ -9,7 +9,6 @@ function productExceptSelf(nums: number[]): number[] {
   // Then, update the running product to be the product of itself and the value at the position.
   for (let i = 0; i < nums.length; i++) {
     result[i] = runningProduct;
-
     runningProduct *= nums[i];
   }
 
