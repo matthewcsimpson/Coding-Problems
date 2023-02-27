@@ -30,7 +30,6 @@ function isValidSudoku(board: string[][]): boolean {
         }
         boxCheck[boxVal] = true;
       }
-      console.log(rowCheck);
     }
   }
   return true;
