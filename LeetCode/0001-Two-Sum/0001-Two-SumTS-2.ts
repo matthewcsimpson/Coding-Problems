@@ -8,7 +8,6 @@ const twoSumTSTwo = (nums: number[], target: number): number[] => {
     } else {
       map.set(nums[i], i);
     }
-    console.log(map);
   }
   return [];
 };
