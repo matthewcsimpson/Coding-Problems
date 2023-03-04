@@ -1,5 +1,3 @@
-const longestCommonPrefix = require("../0014-Longest-Prefix/0014-Longest-Prefix");
-
 /**
  * @param {string} s
  * @return {number}
@@ -14,7 +12,7 @@ const lengthOfLongestSubstring = (s) => {
 
   // loop
   for (let i = 0; i < s.length; i++) {
-    // if the letter is at an index higher than the stored start value...
+    // if the letter is at an index higher than the stored start value
     // assign the index of that letter as the start variable.
     if (map.get(s[i]) >= start) {
       start = map.get(s[i]) + 1;
@@ -28,8 +26,7 @@ const lengthOfLongestSubstring = (s) => {
       max = i - start + 1;
     }
   }
-
   return max;
 };
 
-module.exports = lengthOfLongestSubstring
+module.exports = lengthOfLongestSubstring;
