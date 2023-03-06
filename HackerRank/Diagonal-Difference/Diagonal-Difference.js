@@ -15,7 +15,7 @@ const diagonalDifference = (arr) => {
 
   // loop through the input array[][].
   for (let i = 0; i < arr.length; i++) {
-    // in the loop, take the firrst element of the first array,
+    // in the loop, take the first element of the first array,
     // second of the second, etc.
     sumBackSlash += arr[i][i];
     // in the loop take the last elemtn of the first array,
