@@ -27,4 +27,4 @@ The testcases will be generated such that the answer is unique.
 - `m == s.length`
 - `n == t.length`
 - `1 <= m`, `n <= 105`
-- `s` and ` consist of uppercase and lowercase English letters.
+- `s` and `t` consist of uppercase and lowercase English letters.
