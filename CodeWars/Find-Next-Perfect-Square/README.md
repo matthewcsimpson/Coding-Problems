@@ -1,5 +1,6 @@
 ## Find the Next Perfect Square
-[CodeWars Link](https://www.codewars.com/kata/56269eb78ad2e4ced1000013)
+
+<https://www.codewars.com/kata/56269eb78ad2e4ced1000013>
 
 You might know some pretty large perfect squares. But what about the _NEXT_ one?
 
@@ -8,9 +9,8 @@ Complete the `findNextSquare()` method that finds the next integral perfect squa
 If the parameter is itself not a perfect square then -1 should be returned. You may assume the parameter is non-negative.
 
 ### Examples:(Input --> Output)
-* 121 --> 144
-* 625 --> 676
-* 114 --> -1 (since 114 is not a perfect square)
 
-## My Solutions
-- [JavaScript](Find-Next-Perfect-Square.js)
+- 121 --> 144
+- 625 --> 676
+- 114 --> -1 (since 114 is not a perfect square)
+

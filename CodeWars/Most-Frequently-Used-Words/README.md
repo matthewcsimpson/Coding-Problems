@@ -1,9 +1,11 @@
 ## Most Frequently Used Words in a Text
-[CodeWars Link](https://www.codewars.com/kata/51e056fe544cf36c410000fb)
+
+<https://www.codewars.com/kata/51e056fe544cf36c410000fb>
 
 Write a function that, given a string of text (possibly with punctuation and line-breaks), returns an array of the top-3 most occurring words, in descending order of the number of occurrences.
 
 Assumptions:
+
 - A word is a string of letters (A to Z) optionally containing one or
   more apostrophes (`'`) in ASCII.
 - Apostrophes can appear at the start, middle or end of a word
@@ -18,16 +20,17 @@ Assumptions:
   no words.
 
 ### Example 1:
--   Input: `text = "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing. An olla of rather more beef than mutton, a salad on most nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra on Sundays, made away with three-quarters of his income."`
--   Output: `["a", "of", "on"]`
+
+- Input: `text = "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing. An olla of rather more beef than mutton, a salad on most nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra on Sundays, made away with three-quarters of his income."`
+- Output: `["a", "of", "on"]`
 
 ### Example 2:
--   Input: `top_3_words("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e")`
--   Output: `["e", "ddd", "aa"]`
+
+- Input: `top_3_words("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e")`
+- Output: `["e", "ddd", "aa"]`
 
 ### Example 3:
--   Input:  `top_3_words(" //wont won't won't")`
--   Output: `["won't", "wont"]`
 
-## My Solutions
-- [JavaScript](Most-Frequently-Used-Words.js)
+- Input: `top_3_words(" //wont won't won't")`
+- Output: `["won't", "wont"]`
+

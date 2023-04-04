@@ -1,5 +1,6 @@
 ## Is This A Triangle?
-[CodeWars Link](https://www.codewars.com/kata/56606694ec01347ce800001b)
+
+<https://www.codewars.com/kata/56606694ec01347ce800001b>
 
 Implement a function that accepts 3 integer values a, b, c.
 
@@ -7,5 +8,3 @@ The function should return `true` if a triangle can be built with the sides of g
 
 (In this case, all triangles must have surface greater than 0 to be accepted).
 
-## My Solutions
-- [JavaScript](Is-This-A-Triangle.js)

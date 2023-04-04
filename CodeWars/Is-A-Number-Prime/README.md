@@ -1,5 +1,6 @@
 ## Is A Number Prime?
-[CodeWars Link](https://www.codewars.com/kata/5262119038c0985a5b00029f)
+
+<https://www.codewars.com/kata/5262119038c0985a5b00029f>
 
 Define a function that takes an integer argument and returns a logical
 value `true` or `false` depending on if the integer is a prime.
@@ -20,9 +21,8 @@ still the most trivial solutions might time out. Numbers go up to 2^31
 n/2, will be too slow.
 
 ### Example
-*   is_prime(1)  /* false */
-*   is_prime(2)  /* true  */
-*   is_prime(-1) /* false */
 
-## My Solutions
-- [JavaScript](Is-A-Number-Prime.js)
+- is_prime(1) /_ false _/
+- is_prime(2) /_ true _/
+- is_prime(-1) /_ false _/
+

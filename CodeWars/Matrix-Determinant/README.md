@@ -1,5 +1,5 @@
 ## Matrix Determinant 
-[CodeWars Link](https://www.codewars.com/kata/52a382ee44408cea2500074c)
+<https://www.codewars.com/kata/52a382ee44408cea2500074c>
 
 Write a function that accepts a square matrix (`N x N` 2D array) and returns the determinant of the matrix.
 
@@ -29,5 +29,3 @@ Note the alternation of signs.
 
 The determinant of larger matrices are calculated analogously, e.g. if M is a 4x4 matrix with first row `[a, b, c, d]`, then: `det(M) = a * det(a_minor) - b * det(b_minor) + c * det(c_minor) - d * det(d_minor)`
 
-## My Solutions
-- [JavaScript](Matrix-Determinant.js)
