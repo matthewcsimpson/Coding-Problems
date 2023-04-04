@@ -1,5 +1,7 @@
 ## Breaking the Records
 
+<https://www.hackerrank.com/challenges/breaking-best-and-worst-records/>
+
 Maria plays college basketball and wants to go pro. Each season she maintains a record of her play. She tabulates the number of times she breaks her season record for most points and least points in a game. Points scored in the first game establish her record for the season, and she begins counting from there.
 Example
 
@@ -25,5 +27,5 @@ breakingRecords has the following parameter(s):
 
 ### Constraints
 
-- 1 < n < 1000
-- 0 <= scores[i] <= 10^8
+- `1 < n < 1000`
+- `0 <= scores[i] <= 10^8`

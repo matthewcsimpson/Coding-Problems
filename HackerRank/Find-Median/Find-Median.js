@@ -1,20 +1,3 @@
-// Find the value of the median element of an array with a odd length
-// after sorting into ascending order.`
-
-// eg:
-// a = [1,2,4,5,3]
-
-// sorted = [1,2,3,4,5]
-
-// median element is 3
-
-/*
- * Complete the 'findMedian' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts INTEGER_ARRAY arr as parameter.
- */
-
 function findMedian(arr) {
   // Write your code here
 

@@ -14,3 +14,5 @@ function birthdayCakeCandles(candles: number[]): number {
 
   return count;
 }
+
+export default birthdayCakeCandles;

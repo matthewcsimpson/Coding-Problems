@@ -19,10 +19,6 @@ function timeConversion(s) {
   return split.join(":");
 }
 
-console.log(timeConversion("11:01:00PM"));
-console.log(timeConversion("10:01:00PM"));
-console.log(timeConversion("09:01:00PM"));
-console.log(timeConversion("08:01:00PM"));
-console.log(timeConversion("07:01:00AM"));
-console.log(timeConversion("12:01:00PM"));
-console.log(timeConversion("12:01:00AM"));
+module.exports = timeConversion;
+
+

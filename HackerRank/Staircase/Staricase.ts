@@ -1,11 +1,17 @@
-function staircase(n: number): void {
+function staircase(n: number): string[] {
+  const res: string []= [];
   for (let i = 1; i <= n; i++) {
     let arr = new Array(n - i)
       .fill(" ")
       .concat(new Array(i).fill("#"))
       .join("");
-    console.log(arr);
+
+    res.push(arr);
   }
+
+  return res
 }
 
-console.log(staircase(6));
+export default staircase;
+
+console.log(staircase(5));

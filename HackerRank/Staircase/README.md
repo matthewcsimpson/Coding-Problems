@@ -1,4 +1,7 @@
-Staircase detail
+## Staircase
+
+<https://www.hackerrank.com/challenges/staircase/>
+
 This is a staircase of size `n = 4`:
 
 `   #`
@@ -8,8 +11,6 @@ This is a staircase of size `n = 4`:
 
 Its base and height are both equal to `n`. It is drawn using `#` symbols and spaces. The last line is not preceded by any spaces.
 Write a program that prints a staircase of size .
-
-### Function Description
 
 ### staircase has the following parameter(s):
 
@@ -31,6 +32,8 @@ Write a program that prints a staircase of size .
 
 Print a staircase of size using # symbols and spaces.
 _Note: The last line must have spaces in it._
+
+Note: I will be returning an 2d array in place of console statements.
 
 #### Sample Input
 

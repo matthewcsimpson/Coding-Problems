@@ -1,4 +1,5 @@
 ## Time Conversion
+<https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/>
 
 Given a time in -hour AM/PM format, convert it to military (24-hour) time.
 Note: - `12:00:00AM` on a 12-hour clock is `00:00:00` on a 24-hour clock.
