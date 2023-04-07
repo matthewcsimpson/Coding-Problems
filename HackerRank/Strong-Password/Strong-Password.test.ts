@@ -1,4 +1,4 @@
-import { test } from "@jest/globals";
+import { test, expect } from "@jest/globals";
 import minimumNumber from "./Strong-Password";
 
 test("Strong Password", () => {
