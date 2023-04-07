@@ -7,7 +7,6 @@ test("Strong Password", () => {
   expect(minimumNumber(7, "AUzs-nV")).toBe(1);
   expect(minimumNumber(7, "zQztAFQ")).toBe(2);
   expect(minimumNumber(7, "#**#*")).toBe(3);
-
 });
 
 
