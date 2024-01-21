@@ -12,6 +12,7 @@ var romanToInt = (s) => {
     D: 500,
     M: 1000,
   };
+
   let num = 0;
   for (let i = 0; i < s.length; i++) {
     if (romanValues[s[i]] < romanValues[s[i + 1]]) {
@@ -27,6 +28,3 @@ var romanToInt = (s) => {
 };
 
 module.exports = romanToInt;
-
-
-
