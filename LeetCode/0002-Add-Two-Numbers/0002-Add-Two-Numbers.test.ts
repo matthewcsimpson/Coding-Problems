@@ -3,6 +3,12 @@ import { expect, test } from "@jest/globals";
 import ListNode from "./0002-ListNode-Def";
 import addTwoNumbers from "./0002-Add-Two-Numbers";
 
+test("0002-add-two-numbers", () => {
+  expect(addTwoNumbers(list1, list2)).toEqual(res1);
+  expect(addTwoNumbers(list3, list4)).toEqual(res2);
+  expect(addTwoNumbers(list5, list6)).toEqual(res3);
+});
+
 // 123 + 452 = 575
 let list1 = new ListNode(1, new ListNode(2, new ListNode(3)));
 let list2 = new ListNode(4, new ListNode(5, new ListNode(2)));
@@ -38,9 +44,3 @@ let res3 = new ListNode(
     )
   )
 );
-
-test("0002-add-two-numbers", () => {
-  expect(addTwoNumbers(list1, list2)).toEqual(res1);
-  expect(addTwoNumbers(list3, list4)).toEqual(res2);
-  expect(addTwoNumbers(list5, list6)).toEqual(res3);
-});

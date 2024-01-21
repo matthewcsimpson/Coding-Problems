@@ -1,6 +1,4 @@
-## Counting Sort 1
-
-<https://www.hackerrank.com/challenges/one-week-preparation-kit-countingsort1/>
+## [Counting Sort 1](https://www.hackerrank.com/challenges/one-week-preparation-kit-countingsort1/)
 
 ## Comparison Sorting
 

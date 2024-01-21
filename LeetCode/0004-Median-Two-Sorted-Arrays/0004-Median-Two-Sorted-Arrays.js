@@ -3,7 +3,7 @@
  * @param {number[]} nums2
  * @return {number}
  */
-var findMedianSortedArrays = function (nums1, nums2) {
+var findMedianSortedArraysJS = function (nums1, nums2) {
   // concatenate the arrays together, and sort the resulting array ascending
   let allnums = nums1.concat(nums2).sort((a, b) => {
     return a - b;
@@ -19,5 +19,4 @@ var findMedianSortedArrays = function (nums1, nums2) {
   }
 };
 
-module.exports = findMedianSortedArrays;
-
+module.exports = findMedianSortedArraysJS;

@@ -12,4 +12,4 @@ const twoSumTSTwo = (nums: number[], target: number): number[] => {
   return [];
 };
 
-export default twoSumTSTwo
+export default twoSumTSTwo;

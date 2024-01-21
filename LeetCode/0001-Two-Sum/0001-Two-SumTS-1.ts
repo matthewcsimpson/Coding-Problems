@@ -12,4 +12,3 @@ const twoSumTS = (nums: number[], target: number): number[] => {
 };
 
 export default twoSumTS;
-
