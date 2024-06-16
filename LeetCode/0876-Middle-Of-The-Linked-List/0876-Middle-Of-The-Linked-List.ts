@@ -1,25 +1,15 @@
-// Given the head of a singly linked list, return the middle node of the linked list.
-
-// If there are two middle nodes, return the second middle node.
-
-// Example 1
-// Input: head = [1,2,3,4,5]
-// Output: [3,4,5]
-// Explanation: The middle node of the list is node 3.
-
-// Example 2:
-// Input: head = [1,2,3,4,5,6]
-// Output: [4,5,6]
-// Explanation: Since the list has two middle nodes with values 3 and 4, we return the second one.
-
-// Constraints:
-// - The number of nodes in the list is in the range [1, 100].
-// - 1 <= Node.val <= 100
-
-//   Definition for singly-linked list.
+/**
+ * Represents a node in a linked list.
+ */
 class ListNode {
   val: number;
   next: ListNode | null;
+
+  /**
+   * Creates a new instance of the ListNode class.
+   * @param val - The value of the node.
+   * @param next - The next node in the linked list.
+   */
   constructor(val?: number, next?: ListNode | null) {
     this.val = val === undefined ? 0 : val;
     this.next = next === undefined ? null : next;
@@ -59,16 +49,21 @@ const middleNode = (head: ListNode | null): ListNode | null => {
 };
 
 // Test Lists
-let l1 = new ListNode(
-  1,
-  new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null))))
+let l1 = 
+new ListNode(1,
+  new ListNode(2, 
+    new ListNode(3, 
+      new ListNode(4, 
+        new ListNode(5, null))))
 );
 
-let l2 = new ListNode(
-  1,
-  new ListNode(
-    2,
-    new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, null))))
+let l2 = 
+new ListNode(1,
+  new ListNode(2,
+    new ListNode(3, 
+      new ListNode(4, 
+        new ListNode(5, 
+          new ListNode(6, null))))
   )
 );
 
