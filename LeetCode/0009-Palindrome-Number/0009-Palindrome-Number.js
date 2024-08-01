@@ -16,7 +16,7 @@ var isPalindrome = function (x) {
   // while x is more than the starting point
   while (x > y) {
     // reset the starting point to itself * 10, plus the remainder of x/10.
-    // efectively, accumulate the moduluses.
+    // effectively, accumulate the moduluses.
     y = y * 10 + (x % 10);
 
     // divide x by 10 and round down.
