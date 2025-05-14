@@ -7,9 +7,7 @@ test("0734-Sentence-Similarity", () => {
   expect(areSentencesSimilar(sentence3a, sentence3b, similarPairs3)).toBe(
     false
   );
-  expect(areSentencesSimilar(sentence4a, sentence4b, similarPairs4)).toBe(
-    true
-  );
+  expect(areSentencesSimilar(sentence4a, sentence4b, similarPairs4)).toBe(true);
 });
 
 const sentence1a = ["great", "acting", "skills"];
@@ -28,10 +26,6 @@ const sentence3a = ["great"],
   sentence3b = ["doubleplus", "good"],
   similarPairs3 = [["great", "doubleplus"]];
 
-console.log(areSentencesSimilar(sentence3a, sentence3b, similarPairs3)); // false
-
 const sentence4a = ["great", "good"],
   sentence4b = ["doubleplus", "good"],
   similarPairs4 = [["great", "doubleplus"]];
-
-console.log(areSentencesSimilar(sentence4a, sentence4b, similarPairs4)); // true

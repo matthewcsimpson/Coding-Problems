@@ -1,5 +1,5 @@
 function staircase(n: number): string[] {
-  const res: string []= [];
+  const res: string[] = [];
   for (let i = 1; i <= n; i++) {
     let arr = new Array(n - i)
       .fill(" ")
@@ -9,9 +9,7 @@ function staircase(n: number): string[] {
     res.push(arr);
   }
 
-  return res
+  return res;
 }
 
 export default staircase;
-
-console.log(staircase(5));

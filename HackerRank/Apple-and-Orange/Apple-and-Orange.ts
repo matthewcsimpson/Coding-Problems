@@ -19,11 +19,7 @@ function countApplesAndOranges(
     }
   });
 
-console.log(aCount)
-console.log(oCount)
-
-return [aCount, oCount]
-
+  return [aCount, oCount];
 }
 
 export default countApplesAndOranges;
