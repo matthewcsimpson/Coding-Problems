@@ -36,7 +36,7 @@
  * @param {string} t
  * @return {boolean}
  */
-const isIsomorphic = (s, t) => {
+const isIsomorphicJS = (s, t) => {
   let ss = s.split("");
   let tt = t.split("");
   let bool = true;
@@ -55,7 +55,7 @@ const isIsomorphic = (s, t) => {
   return bool;
 };
 
-console.log(isIsomorphic("paper", "title"));
-console.log(isIsomorphic("boop", "school"));
-console.log(isIsomorphic("one", "two"));
-console.log(isIsomorphic("thrae", "spree"));
+console.log(isIsomorphicJS("paper", "title"));
+console.log(isIsomorphicJS("boop", "school"));
+console.log(isIsomorphicJS("one", "two"));
+console.log(isIsomorphicJS("thrae", "spree"));

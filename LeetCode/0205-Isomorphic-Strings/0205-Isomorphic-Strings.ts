@@ -26,7 +26,7 @@
 // t.length == s.length
 // s and t consist of any valid ascii character.
 
-const isIsomorphic = (s: string, t: string): boolean => {
+const isIsomorphicTS = (s: string, t: string): boolean => {
   // Split the strings into arrays of characters
   let ss = s.split("");
   let tt = t.split("");
@@ -49,8 +49,8 @@ const isIsomorphic = (s: string, t: string): boolean => {
   return bool;
 };
 
-console.log(isIsomorphic("paper", "title")); // true
-console.log(isIsomorphic("boop", "school")); // false
-console.log(isIsomorphic("one", "two")); // true
-console.log(isIsomorphic("thrae", "spree")); // false
-console.log(isIsomorphic("foo", "bar")); // false
+console.log(isIsomorphicTS("paper", "title")); // true
+console.log(isIsomorphicTS("boop", "school")); // false
+console.log(isIsomorphicTS("one", "two")); // true
+console.log(isIsomorphicTS("thrae", "spree")); // false
+console.log(isIsomorphicTS("foo", "bar")); // false
