@@ -12,11 +12,7 @@
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {
-    "init": "^0.1.2",
-    "npm": "^9.4.2"
-  },
-  "name": "_codingproblems",
+  "name": "codingproblems",
   "description": "This is a repository where I'll be storing my solutions to various coding and whiteboarding problems. If I come up with more than one solution to a single problem, they will be in the same file.",
   "version": "1.0.0",
   "main": "index.js",
