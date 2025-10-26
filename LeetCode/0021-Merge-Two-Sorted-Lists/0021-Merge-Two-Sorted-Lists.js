@@ -1,26 +1,7 @@
-// You are given the heads of two sorted linked lists list1 and list2.
-
-// Merge the two lists in a one sorted list. The list should be made by
-// splicing together the nodes of the first two lists.
-
-// Return the head of the merged linked list.
-
-// Example 1:
-// Input: list1 = [1,2,4], list2 = [1,3,4]
-// Output: [1,1,2,3,4,4]
-
-// Example 2:
-// Input: list1 = [], list2 = []
-// Output: []
-
-// Example 3:
-// Input: list1 = [], list2 = [0]
-// Output: [0]
-
 /**
  * Definition for singly-linked list.
  */
-function ListNode(val, next) {
+function ListNodeJs(val, next) {
   // val is a value, or it's 0.
   this.val = val === undefined ? 0 : val;
   // next is either nothing, or another ListNode().
@@ -28,13 +9,13 @@ function ListNode(val, next) {
 }
 
 /**
- * @param {ListNode} list1
- * @param {ListNode} list2
- * @return {ListNode}
+ * @param {ListNodeJs} list1
+ * @param {ListNodeJs} list2
+ * @return {ListNodeJs}
  */
-const mergeTwoLists = (list1, list2) => {
+const mergeTwoListsJs = (list1, list2) => {
   // new ListNode
-  let result = new ListNode(null);
+  let result = new ListNodeJs(null);
 
   // reference to the current node of the list
   let current = result;
@@ -66,6 +47,4 @@ const mergeTwoLists = (list1, list2) => {
   return result.next;
 };
 
-let l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-let l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-console.log(mergeTwoLists(l1, l2));
+module.exports = { ListNodeJs, mergeTwoListsJs };
