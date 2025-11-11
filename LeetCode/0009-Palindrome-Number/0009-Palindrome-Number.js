@@ -6,7 +6,7 @@ var isPalindrome = function (x) {
   // if the number is less than zero, OR
   // divides by 10 with no remainder AND isn't exactly zero
   // return false because it cannot be a palindrome.
-  if (x < 0 || (x % 10 === 0 && x !== 0)) {
+  if (x < 1 || (x % 10 === 0 && x !== 0)) {
     return false;
   }
 
