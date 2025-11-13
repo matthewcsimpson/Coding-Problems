@@ -7,12 +7,12 @@
  * - Open brackets must be closed in the correct order.
  * - Every close bracket has a corresponding open bracket of the same type.
  *
- * @param {string} s
+ * @param {string} str
  * @return {boolean}
  */
-var isValid = function (string) {
+var isValidParenthesis = function (str: string): boolean {
   // Convert string to array of characters for easier iteration
-  let array = string.split("");
+  let array = str.split("");
   // Stack to keep track of opening brackets waiting for their closing pairs
   let checkArray = [];
 
@@ -61,4 +61,4 @@ var isValid = function (string) {
   return checkArray.length === 0;
 };
 
-module.exports = isValid;
+export default isValidParenthesis;

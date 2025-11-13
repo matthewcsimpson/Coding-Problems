@@ -6,12 +6,12 @@
  * - Open brackets must be closed by the same type of brackets.
  * - Open brackets must be closed in the correct order.
  * - Every close bracket has a corresponding open bracket of the same type.
- * @param string
+ * @param str
  * @returns boolean
  */
-const isValidTS = (string: string): boolean => {
+const isValidParenthesisCondensed = (str: string): boolean => {
   // Split the input string into an array of individual characters
-  let symbols = string.split("");
+  let symbols = str.split("");
   // Initialize an empty checkArray to track opening brackets
   let checkArray: string[] = [];
 
@@ -42,4 +42,4 @@ const isValidTS = (string: string): boolean => {
   return checkArray.length === 0;
 };
 
-export default isValidTS;
+export default isValidParenthesisCondensed;
