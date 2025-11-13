@@ -1,58 +1,64 @@
 /**
+ * Determine if the input string of parentheses is valid.
+ *
+ * An input string is valid if:
+ *
+ * - Open brackets must be closed by the same type of brackets.
+ * - Open brackets must be closed in the correct order.
+ * - Every close bracket has a corresponding open bracket of the same type.
+ *
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function (s) {
-  // split the incoming string into an array
-  let array = s.split("");
-  // new array to hold the character we'll be checking
+var isValid = function (string) {
+  // Convert string to array of characters for easier iteration
+  let array = string.split("");
+  // Stack to keep track of opening brackets waiting for their closing pairs
   let checkArray = [];
 
-  // loop the array
+  // Iterate through each character in the string
   for (let i = 0; i < array.length; i++) {
-    // if the current character is any opening bracket, add it to the checkArray.
+    // Push any opening bracket onto the stack
     if (array[i] === "(" || array[i] === "{" || array[i] === "[") {
       checkArray.push(array[i]);
     }
 
-    // if the last character in the checkArray is the matching opening bracket to ),
-    // pop() that last character out of the checkArray.  else, push in the current
-    // character into the check array
+    // Handle closing parenthesis ')'
     if (array[i] === ")") {
+      // If matching opening parenthesis is on top of stack, remove it (valid pair)
       if (checkArray[checkArray.length - 1] === "(") {
         checkArray.pop();
       } else {
+        // No matching opening bracket found, push to mark invalid sequence
         checkArray.push(array[i]);
       }
     }
 
-    // if the last character in the checkArray is the matching opening bracket to },
-    // pop() that last character out of the checkArray.  else, push in the current
-    // character into the check array
+    // Handle closing curly brace '}'
     if (array[i] === "}") {
+      // If matching opening brace is on top of stack, remove it (valid pair)
       if (checkArray[checkArray.length - 1] === "{") {
         checkArray.pop();
       } else {
+        // No matching opening bracket found, push to mark invalid sequence
         checkArray.push(array[i]);
       }
     }
 
-    // if the last character in the checkArray is the matching opening bracket to ],
-    // pop() that last character out of the checkArray.  else, push in the current
-    // character into the check array
+    // Handle closing square bracket ']'
     if (array[i] === "]") {
+      // If matching opening bracket is on top of stack, remove it (valid pair)
       if (checkArray[checkArray.length - 1] === "[") {
         checkArray.pop();
       } else {
+        // No matching opening bracket found, push to mark invalid sequence
         checkArray.push(array[i]);
       }
     }
   }
 
-  // after all those checks, if the checkArray still has values in it,
-  // then there is an invalid pair and return false.  otherwise return true.
-  return checkArray.length > 0 ? false : true;
+  // Return true if stack is empty (all brackets properly matched), false otherwise
+  return checkArray.length === 0;
 };
 
 module.exports = isValid;
-
