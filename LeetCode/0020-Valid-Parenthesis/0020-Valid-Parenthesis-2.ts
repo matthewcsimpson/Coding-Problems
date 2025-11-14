@@ -10,25 +10,20 @@
  * @returns boolean
  */
 const isValidParenthesisCondensed = (str: string): boolean => {
-  // Split the input string into an array of individual characters
-  let symbols = str.split("");
-  // Initialize an empty checkArray to track opening brackets
+  let array = str.split("");
   let checkArray: string[] = [];
 
-  // Iterate through each character in the string
-  for (const symbol of symbols) {
-    // Check if the current character is an opening bracket
-    if (symbol === "(" || symbol === "{" || symbol === "[") {
-      // Push opening brackets onto the checkArray
-      checkArray.push(symbol);
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "(" || array[i] === "{" || array[i] === "[") {
+      checkArray.push(array[i]);
     } else {
       // Pop the most recent opening bracket from the checkArray
       let prev = checkArray.pop();
       // Check if the popped bracket matches the current closing bracket
       if (
-        (prev === "(" && symbol === ")") ||
-        (prev === "{" && symbol === "}") ||
-        (prev === "[" && symbol === "]")
+        (prev === "(" && array[i] === ")") ||
+        (prev === "{" && array[i] === "}") ||
+        (prev === "[" && array[i] === "]")
       ) {
         // Valid pair found, continue to next character
         continue;
