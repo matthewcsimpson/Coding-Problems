@@ -10,9 +10,9 @@
  * @param {string} str
  * @return {boolean}
  */
-var isValidParenthesis = function (str: string): boolean {
+const isValidParenthesis = (str: string): boolean => {
   // Convert string to array of characters for easier iteration
-  let array = str.split("");
+  const array = str.split("");
   // Stack to keep track of opening brackets waiting for their closing pairs
   let checkArray = [];
 
