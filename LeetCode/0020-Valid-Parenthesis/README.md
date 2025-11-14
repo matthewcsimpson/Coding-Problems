@@ -1,5 +1,7 @@
 ## 20. Valid Parenthesis
 
+### _Note: This problem is [discussed in detail here](https://medium.com/@mcsimpson/solving-leetcode-0020-valid-parentheses-in-four-different-ways-bf3cf0b2098e)._
+
 Given a string s containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`,
 determine if the input string is valid.
 
