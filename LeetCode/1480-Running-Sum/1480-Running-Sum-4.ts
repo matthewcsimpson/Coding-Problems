@@ -4,10 +4,10 @@
  * @returns
  */
 const runningSum = (nums: number[]): number[] => {
-  let total = 0;
-  return nums.map((n) => {
-    total += n;
-    return total;
+  let runningTotal = 0;
+  return nums.map((num) => {
+    runningTotal += num;
+    return runningTotal;
   });
 };
 

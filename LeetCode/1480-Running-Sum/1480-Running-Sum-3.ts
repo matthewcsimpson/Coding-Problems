@@ -4,10 +4,10 @@
  * @returns
  */
 const runningSum = (nums: number[]): number[] => {
-  let total = 0;
+  let runningTotal = 0;
   nums.forEach((num, index) => {
-    total += num;
-    nums[index] = total;
+    runningTotal += num;
+    nums[index] = runningTotal;
   });
   return nums;
 };

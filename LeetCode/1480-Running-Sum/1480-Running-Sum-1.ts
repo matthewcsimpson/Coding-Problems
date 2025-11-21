@@ -4,7 +4,7 @@
  * @returns
  */
 const runningSum = (nums: number[]): number[] => {
-  let returnNums: number[] = [];
+  const returnNums: number[] = [];
   let runningTotal: number = 0;
 
   for (let i = 0; i < nums.length; i++) {
