@@ -1,14 +1,21 @@
-const containsDuplicateTwo = (nums: number[]): boolean => {
+/**
+ * Given an integer array nums, return true if any
+ * value appears at least twice in the array, and
+ * return false if every element is distinct.
+ * @param nums
+ * @returns
+ */
+const containsDuplicateSort = (nums: number[]): boolean => {
   nums.sort((a, b) => {
     return a - b;
   });
 
   for (let i = 0; i < nums.length; i++) {
-    if(nums[i]=== nums[i+1])  {
-        return true;
-    }  
+    if (nums[i] === nums[i + 1]) {
+      return true;
+    }
   }
   return false;
 };
 
-export default containsDuplicateTwo;
+export default containsDuplicateSort;
