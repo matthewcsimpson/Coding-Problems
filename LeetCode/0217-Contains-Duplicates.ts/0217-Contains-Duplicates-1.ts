@@ -5,17 +5,17 @@
  * @param nums
  * @returns
  */
-const containsDuplicateDict = (nums: number[]): boolean => {
-  const dictionary: number[] = [];
+const containsDuplicate = (nums: number[]): boolean => {
+  const check: number[] = [];
 
   for (let i = 0; i < nums.length; i++) {
-    if (dictionary.includes(nums[i])) {
+    if (check.includes(nums[i])) {
       return true;
     } else {
-      dictionary.push(nums[i]);
+      check.push(nums[i]);
     }
   }
   return false;
 };
 
-export default containsDuplicateDict;
+export default containsDuplicate;

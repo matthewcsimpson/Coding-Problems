@@ -8,13 +8,11 @@ const containsNearbyDuplicateSliding = (nums: number[], k: number): boolean => {
   const window = new Set<number>();
 
   for (let i = 0; i < nums.length; i++) {
-    const check = nums[i];
-
-    if (window.has(check)) {
+    if (window.has(nums[i])) {
       return true;
     }
 
-    window.add(check);
+    window.add(nums[i]);
 
     if (window.size > k) {
       window.delete(nums[i - k]);
