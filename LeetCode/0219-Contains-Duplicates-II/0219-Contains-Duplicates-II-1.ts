@@ -5,16 +5,16 @@
  * @returns
  */
 const containsNearbyDuplicate = (nums: number[], k: number): boolean => {
-  const last = new Map<number, number>();
+  const seen = new Map<number, number>();
 
   for (let i = 0; i < nums.length; i++) {
-    if (last.has(nums[i])) {
-      const check = last.get(nums[i]);
+    if (seen.has(nums[i])) {
+      const check = seen.get(nums[i]);
       if (check !== undefined && i - check <= k) {
         return true;
       }
     }
-    last.set(nums[i], i);
+    seen.set(nums[i], i);
   }
   return false;
 };
